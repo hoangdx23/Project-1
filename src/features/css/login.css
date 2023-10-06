@@ -1,0 +1,76 @@
+.container{
+    width: 1536px;
+    height: 100vh;
+    background-image: url('../img/anhkho.jpg');
+    position: relative;
+}
+.container::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left:0;
+    bottom:0;
+    right: 0;
+    background-color:#000 ;
+    opacity: 0.2;
+}
+.login-container {
+    color: white;
+  background-color : rgba(128, 128, 128, 0.8);
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  text-align: center;
+  padding: 20px;
+  max-width: 370px;
+  margin: 0 auto;
+  backdrop-filter: blur(3px);
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-container  h1 {
+  margin: 0 0 20px;
+  line-height: 1.1;
+  font-size: xx-large;
+}
+
+
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px auto;
+  /* border: 1px solid #ccc;
+  border-radius: 3px; */
+  border: none;
+  border-bottom: 1px solid white; 
+  background-color: transparent; 
+  outline: none;
+   max-width: 350px;
+   caret-color: white;
+   color: white;
+}
+
+ form button {
+    background-color: white;
+    width: 70%;
+    color: black;
+    height: 40px;
+    border-radius: 100px;
+}
+label {
+    text-transform: uppercase;
+    float: left;
+    font-size: small;
+}
+p{
+    margin-top: 1px;
+    float: left;
+}
+.checkbox input{
+    height: 11px;
+    width: 11px;
+    margin-right: 10px;
+}

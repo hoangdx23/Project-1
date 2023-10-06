@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "name": "sp1 ",
+      "description": "hoaassa",
+      "quantity": 100,
+      "origin": "Trung quốc",
+      "id": 1
+    },
+    {
+      "name": "sp2 ",
+      "description": "sdahsdihsad",
+      "quantity": 200,
+      "origin": "việt nam",
+      "id": 2
+    }
+  ]
+}

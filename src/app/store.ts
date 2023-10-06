@@ -1,10 +1,15 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit"
-import counterReducer from "../features/counter/counterSlice"
-
+ import productsReducer from"../features/toolkit/products/productsSlice"
+import { productsApi } from "../features/toolkit/products/products.service"
+import productsSlice from "../features/toolkit/products/productsSlice"
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    products:productsReducer,
+    [productsApi.reducerPath]:productsApi.reducer,
+    product:productsSlice
   },
+  middleware: (getDefaultMiddleware) =>
+  getDefaultMiddleware().concat(productsApi.middleware),
 })
 
 export type AppDispatch = typeof store.dispatch
