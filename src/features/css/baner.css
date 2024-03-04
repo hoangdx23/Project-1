@@ -1,0 +1,35 @@
+img {
+  flex: 1;
+  margin: 5px;
+  /* Khoảng cách giữa các ảnh */
+  padding: 5px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.66667vw;
+  font-family: DINPro;
+  font-weight: 700;
+  color: #e60021;
+  line-height: 1.66667vw;
+  margin: 20px 40px;
+}
+
+.sp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

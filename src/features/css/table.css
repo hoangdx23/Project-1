@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-collapse: separate; /* Sử dụng separate thay vì collapse */
+      border-spacing: 0; /* Loại bỏ khoảng cách giữa các ô */
+      border: none;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+tr:hover th,
+tr:hover td {
+  background-color: #e74c3c;
+  color: #000;
+  border-spacing: 0; /* Loại bỏ khoảng cách giữa các ô */
+  transition: transform 0.3s ease-in-out;
+}
+

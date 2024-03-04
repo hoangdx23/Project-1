@@ -1,0 +1,60 @@
+.menu-container {
+  position: relative;
+  z-index: 2;
+  /* Đặt độ sâu của menu là 2 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  /* Khoảng cách giữa nội dung và biên của header */
+  z-index: 1000;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  height: 50px;
+}
+
+.menu li {
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-right: 13px;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  /* background-image: url('https://theme.hstatic.net/1000306633/1000891824/14/slideshow_1.jpg?v=587');
+      background-attachment: fixed; */
+}
+
+.img {
+  height: 50px;
+  padding-right: 20px;
+}
+
+.a-right {
+  padding-left: 30%;
+  font-size: 14px;
+  display: flex;
+}
