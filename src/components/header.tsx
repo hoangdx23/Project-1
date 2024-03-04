@@ -38,7 +38,7 @@ const Header = () => {
               <Link to={"/reginster"}>ĐĂNG KÍ</Link>
             </li>
             <li>
-              <a href="#">GIỎ HÀNG </a>
+              <Link to={"/cart"}>GIỎ HÀNG</Link>
             </li>
           </div>
         </ul>
