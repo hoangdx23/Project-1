@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="login" element={<Login />} />
-        <Route path="reginster" element={<Reginster />} />
+        <Route path="register" element={<Reginster />} />
         <Route path="cart" element={<Cart />} />
         <Route path="/admin" element={<AdminShell />}>
           {/* <Route path="add" element={<Add />} />
