@@ -1,8 +1,8 @@
-import Banner from "./banner";
-import Footer from "./footer";
+import Banner from "./layouts/banner";
+import Footer from "./layouts/footer";
 import "../features/css/header.css";
 import Home from "../pages/user/home";
-import Header from "./header";
+import Header from "./layouts/header";
 const UserShell = () => {
   return (
     <div>

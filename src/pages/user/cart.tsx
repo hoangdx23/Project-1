@@ -1,7 +1,7 @@
 import React from "react";
 import "../../features/css/cart.css";
-import Banner from "../../components/banner";
-import Header from "../../components/header";
+import Banner from "../../components/layouts/banner";
+import Header from "../../components/layouts/header";
 
 const Cart = () => {
   return (

@@ -22,7 +22,7 @@ const Login = () => {
               <p>
                 {" "}
                 Don't have an account?
-                <Link to={"/reginster"}> Login here</Link>
+                <Link to={"/register"}> Login here</Link>
               </p>
             </div>
           </form>

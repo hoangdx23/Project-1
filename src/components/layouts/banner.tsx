@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../features/css/baner.css";
+import "../../features/css/baner.css";
 const Banner = () => {
   return (
     <div className="containerbanner">
