@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/layouts/header";
+import Footer from "../../components/layouts/footer";
 
 const Payment = () => {
   return (
@@ -270,6 +271,7 @@ const Payment = () => {
           />
         </form>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

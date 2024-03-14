@@ -1,6 +1,7 @@
 import "../../features/css/cart.css";
 import Banner from "../../components/layouts/banner";
 import Header from "../../components/layouts/header";
+import Footer from "../../components/layouts/footer";
 
 const Cart = () => {
   return (
@@ -90,6 +91,7 @@ const Cart = () => {
           </tbody>
         </table>
       </div>
+      <Footer/>
     </div>
   );
 };
