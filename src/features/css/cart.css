@@ -47,3 +47,6 @@ body {
 .dark .table tbody tr:last-child {
     border-bottom: 1px solid #2d3748;
 }
+.cart{
+    width: 1440px;
+}

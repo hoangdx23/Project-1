@@ -6,270 +6,77 @@ const Payment = () => {
   return (
     <div>
       <Header></Header>
-      <div className="mx-auto mt-10">
-        <form
-          style={{ color: "black" }}
-          action="#"
-          className="max-w-xl mx-auto 
-								bg-white p-8 rounded 
-								shadow-lg"
-        >
-          <div
-            className="grid grid-cols-1 
-						md:grid-cols-2 gap-6"
-          >
-            <div>
-              <h3
-                className="text-lg font-semibold 
-							text-red-600 mb-4"
-              >
-                Billing Address
-              </h3>
-              <div className="mb-4">
-                <label
-                  htmlFor="name"
-                  className="block text-sm 
-									font-medium text-gray-700"
-                >
-                  Full Name:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="name"
-                  placeholder="Enter your full name"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md 
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium
-									text-gray-700"
-                >
-                  Email:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="email"
-                  id="email"
-                  placeholder="Enter your email ID"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300
-									rounded-md shadow-sm 
-									focus:ring-red-500 
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="address"
-                  className="block text-sm font-medium
-									text-gray-700"
-                >
-                  Address:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="address"
-                  placeholder="Enter your Address"
-                  required
-                  className="mt-1 block w-full border-gray-300
-									rounded-md shadow-sm 
-									focus:ring-red-500 
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="city"
-                  className="block text-sm font-medium 
-									text-gray-700"
-                >
-                  City:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="city"
-                  placeholder="Enter your city"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="state"
-                  className="block text-sm font-medium
-									text-gray-700"
-                >
-                  State:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="state"
-                  placeholder="Enter your state"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300
-									rounded-md shadow-sm
-									focus:ring-red-500 
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="zip"
-                  className="block text-sm font-medium
-									text-gray-700"
-                >
-                  Zip code:
-                </label>
-                <input
-                  type="text"
-                  id="zip"
-                  placeholder="Enter your zip code"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md 
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
+      <div className="payment lg:grid lg:grid-cols-4 lg:gap-5 m-auto mt-2">
+        <div className="col-span-1">
+          <div className="text-2xl font-bold">Billing Details</div>
+          <hr />
+          <div className="mt-5">
+            <div className="font-semibold my-1">Email</div>
+            <input type="email" className="border border-gray-600 p-2 rounded w-full my-2 focus:outline-blue-400"/>
+            <div className="font-semibold my-1">Full Name</div>
+            <input type="text" className="border border-gray-600 p-2 rounded w-full my-2 focus:outline-blue-400"/>
+            <div className="font-semibold my-1">Phone</div>
+            <input type="text" className="border border-gray-600 p-2 rounded w-full my-2 focus:outline-blue-400"/>
+            <div className="font-semibold my-1">Address</div>
+            <textarea className="border border-gray-600 p-1 rounded w-full my-2 focus:outline-blue-400" id="" rows={2}></textarea>
+          </div>
+        </div>
+        <div className="col-span-3 bg-green-50 p-10">
+          <div className="text-2xl font-bold">Your Order</div>
+          <hr />
+          <table className="table-auto m-1 w-full">
+            <thead>
+              <tr>
+                <th>Products Name</th>
+                <th>Image</th>
+                <th>Type</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>The Mare of Animals</td>
+                <td className="w-20">
+                  <img src="https://res.cloudinary.com/dwxumu69m/image/upload/v1697345237/POP%20MART/uyfdmwa5ztjqsg3ppd8n.jpg" alt="" className="w-40"/>
+                </td>
+                <td>Single Box</td>
+                <td>Skullpanda</td>
+                <td>3</td>
+                <td>$35.7</td>
+              </tr>
+            </tbody>
+              <tr className="border border-x-green-50 border-b-green-50">
+                <th>Tổng thanh toán</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>$35.7</th>
+              </tr>
+          </table>
+          <div className="bg-white p-4">
+            <div>---Chọn phương thức thanh toán---</div>
+            <div className="border border-gray-300 rounded p-3 text-xl font-medium my-2">
+              <input type="radio" className="mr-5"/>
+              Thanh toán khi nhận hàng
             </div>
-            <div>
-              <h3
-                className="text-lg font-semibold 
-							text-red-600 mb-4"
-              >
-                Payment
-              </h3>
-              <div className="mb-4">
-                <label
-                  htmlFor="cardName"
-                  className="block text-sm font-medium
-									text-gray-700"
-                >
-                  Name On Card:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="cardName"
-                  placeholder="Enter card name"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md 
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="cardNumber"
-                  className="block text-sm font-medium 
-									text-gray-700"
-                >
-                  Credit Card Number:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="cardNumber"
-                  placeholder="Enter card number"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
-              <div className="flex justify-between mb-4">
-                <div className="w-1/2 mr-2">
-                  <label
-                    htmlFor="expMonth"
-                    className="block text-sm font-medium
-										text-gray-700"
-                  >
-                    Expiration Month:
-                  </label>
-                  <input
-                    style={{ color: "black" }}
-                    type="text"
-                    id="expMonth"
-                    placeholder="MM"
-                    required
-                    className="mt-1 block w-full 
-										border-gray-300 rounded-md
-										shadow-sm focus:ring-red-500
-										focus:border-red-500"
-                  />
-                </div>
-                <div className="w-1/2 ml-2">
-                  <label
-                    htmlFor="expYear"
-                    className="block text-sm 
-										font-medium 
-										text-gray-700"
-                  >
-                    Expiration Year:
-                  </label>
-                  <input
-                    style={{ color: "black" }}
-                    type="text"
-                    id="expYear"
-                    placeholder="YYYY"
-                    required
-                    className="mt-1 block w-full 
-										border-gray-300 
-										rounded-md shadow-sm
-										focus:ring-red-500 
-										focus:border-red-500"
-                  />
-                </div>
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="cvv"
-                  className="block text-sm 
-									font-medium 
-									text-gray-700"
-                >
-                  CVV:
-                </label>
-                <input
-                  style={{ color: "black" }}
-                  type="text"
-                  id="cvv"
-                  placeholder="Enter CVV"
-                  required
-                  className="mt-1 block w-full 
-									border-gray-300 rounded-md
-									shadow-sm focus:ring-red-500
-									focus:border-red-500"
-                />
-              </div>
+            <div className="border border-gray-300 rounded p-3 text-xl font-medium my-2">
+              <input type="radio" className="mr-5"/>
+              Thanh toán online
             </div>
           </div>
-          <input
-            style={{ color: "black" }}
-            type="submit"
-            value="Proceed to Checkout"
-            id="checkoutBtn"
-            className="mt-6 px-4 py-2 bg-red-600 text-white
-						rounded-md hover:bg-red-700"
-          />
-        </form>
+          <div className="mt-2">
+            Việc đặt hàng của bạn đồng thời chấp nhận 
+            <a href="#" className="text-red-400 hover:text-red-500"> điều khoản và dịch vụ* </a>của chúng tôi.
+          </div>
+          <button className="border px-8 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 font-semibold text-white hover:text-gray-200 my-2">Đặt hàng</button>
+          <div>
+            <div className="font-semibold mt-2">Ghi chú</div>
+            <textarea className="border border-gray-600 p-3 rounded w-full my-2 focus:outline-blue-400" id="" cols={20} rows={10}></textarea>
+          </div>
+        </div>
       </div>
       <Footer></Footer>
     </div>

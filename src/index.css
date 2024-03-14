@@ -27,3 +27,9 @@
   border-width: 0px;
   display: none;
 }
+.payment{
+  width: 1440px;
+}
+hr{
+  color: gray;
+}
