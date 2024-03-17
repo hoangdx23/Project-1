@@ -15,7 +15,7 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className="lg:hidden flex">
+          <div className="xl:hidden flex">
             <button
               x-on:click="menuOpen = !menuOpen"
               type="button"
@@ -41,7 +41,7 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="lg:gap-x-8 lg:flex hidden">
+          <div className="xl:gap-x-8 xl:flex hidden">
             <a
               href="#"
               className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
@@ -79,10 +79,10 @@ const Header = () => {
               FOOTWEAR
             </a>
           </div>
-          <div className="lg:justify-end lg:flex-1 lg:flex hidden gap-2">
+          <div className="xl:justify-end xl:flex-1 xl:flex hidden gap-2">
             <Link
               to={"/cart"}
-              className="text-black font-semibold leading-6 text-sm decoration-inherit"
+              className="text-black font-semibold leading-6 text-sm decoration-inherit hover:bg-gray-300 hover:rounded-full"
             >
               <img
                 className="w-auto h-8"
@@ -92,13 +92,13 @@ const Header = () => {
             </Link>
             <Link
               to={"/login"}
-              className="text-black font-semibold leading-8 text-sm decoration-inherit"
+              className="text-black font-semibold leading-8 text-sm decoration-inherit hover:text-gray-500"
             >
               ĐĂNG NHẬP
             </Link>
             <Link
               to={"/register"}
-              className="text-black font-semibold leading-8 text-sm decoration-inherit"
+              className="text-black font-semibold leading-8 text-sm decoration-inherit hover:text-gray-500"
             >
               ĐĂNG KÝ
             </Link>

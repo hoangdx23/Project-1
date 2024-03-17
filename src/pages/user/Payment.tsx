@@ -39,7 +39,17 @@ const Payment = () => {
               <tr>
                 <td>The Mare of Animals</td>
                 <td className="w-20">
-                  <img src="https://res.cloudinary.com/dwxumu69m/image/upload/v1697345237/POP%20MART/uyfdmwa5ztjqsg3ppd8n.jpg" alt="" className="w-40"/>
+                  <img src="https://res.cloudinary.com/dwxumu69m/image/upload/v1697345237/POP%20MART/uyfdmwa5ztjqsg3ppd8n.jpg" alt="" className="w-40 float-left"/>
+                </td>
+                <td>Single Box</td>
+                <td>Skullpanda</td>
+                <td>3</td>
+                <td>$35.7</td>
+              </tr>
+              <tr>
+                <td>The Mare of Animals</td>
+                <td className="w-20">
+                  <img src="https://res.cloudinary.com/dwxumu69m/image/upload/v1697345237/POP%20MART/uyfdmwa5ztjqsg3ppd8n.jpg" alt="" className="w-40 float-left"/>
                 </td>
                 <td>Single Box</td>
                 <td>Skullpanda</td>
