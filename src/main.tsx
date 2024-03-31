@@ -15,6 +15,7 @@ import Home from "./pages/user/home";
 import ListProducts from "./components/ListProducts";
 import Cart from "./pages/user/cart";
 import Payment from "./pages/user/Payment";
+import ProductDetail from "./pages/user/ProductDetail";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="register" element={<Reginster />} />
         <Route path="cart" element={<Cart />} />
         <Route path="payment" element={<Payment />} />
+        <Route path="detail" element={<ProductDetail />} />
         {/* <Route path="/admin" element={<AdminShell />}>
           <Route path="add" element={<Add />} />
             <Route index element={<Product />} />
