@@ -5,9 +5,9 @@ import Home from "../pages/user/home";
 import Header from "./layouts/header";
 const UserShell = () => {
   return (
-    <div>
+    <div className="w-[1500px] m-auto" >
       <Header />
-      <Banner></Banner>
+      <Banner />
       <main className="flex justify-center items-center">
         <Home />
       </main>
