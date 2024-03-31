@@ -80,7 +80,7 @@ const Home = () => {
             <div key={product.id} className="card w-1/4 p-4 py-10">
               <div className="imgBx ">
                 {/* Chú ý: Đây là một ví dụ, bạn cần cung cấp URL của hình ảnh cho thuộc tính src */}
-                <img src={product.img} alt="nike-air-shoe" />
+                <a href="detail"><img src={product.img} alt="nike-air-shoe" /></a>
               </div>
               <div className="contentBx">
                 <div className="button">
