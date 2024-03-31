@@ -21,7 +21,7 @@ const Payment = () => {
             <textarea className="border border-gray-600 p-1 rounded w-full my-2 focus:outline-blue-400" id="" rows={2}></textarea>
           </div>
         </div>
-        <div className="col-span-3 bg-green-50 p-10">
+        <div className="col-span-3 bg-orange-50 p-10">
           <div className="text-2xl font-bold">Your Order</div>
           <hr />
           <table className="table-auto m-1 w-full">

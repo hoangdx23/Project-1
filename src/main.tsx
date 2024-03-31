@@ -16,6 +16,7 @@ import ListProducts from "./components/ListProducts";
 import Cart from "./pages/user/cart";
 import Payment from "./pages/user/Payment";
 import ProductDetail from "./pages/controller/DetailProduct";
+import AdminProduct from "./pages/admin";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -31,6 +32,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </Route> */}
         {/* <Route path="/admin/update/:id" element={<Update />} /> */}
         <Route path="/" element={<UserShell />}>
+          {/* <Route index element={<Banner />} /> */}
+        </Route>
+        <Route path="/admin" element={<AdminProduct />}>
           {/* <Route index element={<Banner />} /> */}
         </Route>
         <Route path="home" element={<ListProducts />}>
