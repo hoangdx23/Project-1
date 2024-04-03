@@ -16,7 +16,7 @@ import ListProducts from "./components/ListProducts";
 import Cart from "./pages/user/cart";
 import Payment from "./pages/user/Payment";
 import ProductDetail from "./pages/controller/DetailProduct";
-import AdminProduct from "./pages/admin";
+import AdminProduct from "./pages/admin/products";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>

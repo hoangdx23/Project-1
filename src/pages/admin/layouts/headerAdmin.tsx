@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const HeaderAdmin = () => {
   return (
@@ -52,7 +52,7 @@ const HeaderAdmin = () => {
         </div>
         <div x-data="{ menuOpen: false }">
       <header className="z-50 top-0 inset-x-0">
-        <nav className="lg:px-8 justify-end items-center flex bg-green-500">
+        <nav className="lg:px-8 justify-end items-center flex bg-red-600">
           <div className="xl:hidden flex p-5">
             <button
               x-on:click="menuOpen = !menuOpen"
@@ -82,25 +82,25 @@ const HeaderAdmin = () => {
           <div className="xl:gap-x-40 xl:flex hidden xl:m-auto ">
             <a
               href="#"
-              className="text-black leading-6 text-2xl decoration-inherit font-semibold p-6 hover:bg-green-300"
+              className="text-white leading-6 text-2xl decoration-inherit font-semibold p-6 "
             >
             Tổng quan
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-2xl decoration-inherit font-semibold p-6 hover:bg-green-300"
+              className="text-white leading-6 text-2xl decoration-inherit font-semibold p-6 "
             >
             Sản phẩm
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-2xl decoration-inherit font-semibold p-6 hover:bg-green-300"
+              className="text-white leading-6 text-2xl decoration-inherit font-semibold p-6 "
             >
             Danh mục
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-2xl decoration-inherit font-semibold p-6 hover:bg-green-300"
+              className="text-white leading-6 text-2xl decoration-inherit font-semibold p-6 "
             >
             Người dùng
             </a>
@@ -182,10 +182,6 @@ const HeaderAdmin = () => {
       </div>
     </div>
     </div>
-
-        
-        
-    
   )
 }
 
