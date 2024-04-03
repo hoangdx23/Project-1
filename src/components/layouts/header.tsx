@@ -15,11 +15,11 @@ const Header = () => {
               />
             </a>
           </div>
-          <div className="lg:hidden flex">
+          <div className="xl:hidden flex">
             <button
               x-on:click="menuOpen = !menuOpen"
               type="button"
-              className="text-gray-400 p-2.5 inline-flex rounded-md	items-center justify-center	-m-2.5"
+              className="text-gray-400 p-2.5 inline-flex rounded-md	items-center justify-center	-m-2.5 "
             >
               <span x-show="menu" className="t">
                 Company
@@ -41,49 +41,48 @@ const Header = () => {
               </svg>
             </button>
           </div>
-          <div className="lg:gap-x-8 lg:flex hidden">
+          <div className="xl:gap-x-8 xl:flex hidden">
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               New & Featured
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               SHOP ALL
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               TOPS
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               BOTTOMS
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               OUTERWEAR
             </a>
             <a
               href="#"
-              className="text-black leading-6 text-sm decoration-inherit font-semibold"
+              className="text-black leading-6 text-sm decoration-inherit font-semibold hover:text-gray-500"
             >
               FOOTWEAR
             </a>
           </div>
-          <div className="w-px h-full bg-gray-400"></div>
-          <div className="lg:justify-end lg:flex-1 lg:flex hidden gap-2">
+          <div className="xl:justify-end xl:flex-1 xl:flex hidden gap-2">
             <Link
               to={"/cart"}
-              className="text-black font-semibold leading-6 text-sm decoration-inherit"
+              className="text-black font-semibold leading-6 text-sm decoration-inherit hover:bg-gray-300 hover:rounded-full"
             >
               <img
                 className="w-auto h-8"
@@ -93,13 +92,13 @@ const Header = () => {
             </Link>
             <Link
               to={"/login"}
-              className="text-black font-semibold leading-8 text-sm decoration-inherit"
+              className="text-black font-semibold leading-8 text-sm decoration-inherit hover:text-gray-500"
             >
               ĐĂNG NHẬP
             </Link>
             <Link
               to={"/register"}
-              className="text-black font-semibold leading-8 text-sm decoration-inherit"
+              className="text-black font-semibold leading-8 text-sm decoration-inherit hover:text-gray-500"
             >
               ĐĂNG KÝ
             </Link>
@@ -152,37 +151,37 @@ const Header = () => {
               <div className="py-6 abs">
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   New & Featured
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   SHOP ALL
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   TOPS
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   BOTTOMS
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   OUTERWEAR
                 </a>
                 <a
                   href="#"
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   FOOTWEAR
                 </a>
@@ -191,19 +190,19 @@ const Header = () => {
               <div className="py-6">
                 <Link
                   to={"/cart"}
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   GIỎ HÀNG
                 </Link>
                 <Link
                   to={"/login"}
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   ĐĂNG NHẬP
                 </Link>
                 <Link
                   to={"/register"}
-                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3"
+                  className="text-gray-900 leading-7 font-semibold text-base py-2 px-3 block decoration-inherit rounded-lg -mx-3 hover:text-gray-500"
                 >
                   ĐĂNG KÝ
                 </Link>

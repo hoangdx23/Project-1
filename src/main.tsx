@@ -15,7 +15,8 @@ import Home from "./pages/user/home";
 import ListProducts from "./components/ListProducts";
 import Cart from "./pages/user/cart";
 import Payment from "./pages/user/Payment";
-import ProductDetail from "./pages/user/ProductDetail";
+import ProductDetail from "./pages/controller/DetailProduct";
+import HeaderAdmin from "./pages/admin/layouts/headerAdmin";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -31,6 +32,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </Route> */}
         {/* <Route path="/admin/update/:id" element={<Update />} /> */}
         <Route path="/" element={<UserShell />}>
+          {/* <Route index element={<Banner />} /> */}
+        </Route>
+        <Route path="/admin" element={<HeaderAdmin />}>
           {/* <Route index element={<Banner />} /> */}
         </Route>
         <Route path="home" element={<ListProducts />}>

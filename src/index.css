@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .t {
   position: absolute;
   width: 1px;
@@ -26,4 +33,13 @@
   white-space: nowrap;
   border-width: 0px;
   display: none;
+}
+.payment {
+  width: 1440px;
+}
+hr {
+  color: gray;
+}
+.showContent {
+  width: 594px;
 }
