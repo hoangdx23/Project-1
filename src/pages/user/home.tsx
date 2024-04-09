@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../features/css/home.css";
+import ProductDetail from "../controller/DetailProduct";
 const Home = () => {
   const products = [
     {
@@ -79,8 +81,9 @@ const Home = () => {
           return (
             <div key={product.id} className="card w-1/4 p-4 py-10">
               <div className="imgBx ">
-                {/* Chú ý: Đây là một ví dụ, bạn cần cung cấp URL của hình ảnh cho thuộc tính src */}
-                <img src={product.img} alt="nike-air-shoe" />
+                <Link to={"/detail"}>
+                  <img src={product.img} alt="nike-air-shoe" />
+                </Link>
               </div>
               <div className="contentBx">
                 <div className="button">
