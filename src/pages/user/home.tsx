@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../features/css/home.css";
-import ProductDetail from "../controller/DetailProduct";
+// import ProductDetail from "../controller/DetailProduct";
 const Home = () => {
   const products = [
     {
