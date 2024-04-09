@@ -12,6 +12,7 @@ import Payment from "./pages/user/Payment";
 import ProductDetail from "./pages/controller/DetailProduct";
 import AdminProduct from "./pages/admin/products/index";
 import AddProduct from "./pages/admin/products/addProducts";
+import User from "./pages/admin/user/ListUser"
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -27,6 +28,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         </Route>
         <Route path="/admin" element={<AdminProduct />}>
           <Route index element={<AdminProduct />} />
+        </Route>
+        <Route path="/user" element={<User />}>
+          <Route index element={<User />} />
         </Route>
         <Route path="add-product" element={<AddProduct />} />\
         {/* <Route path="/message" element={<Message />} /> */}

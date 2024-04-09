@@ -30,7 +30,7 @@ const Register = () => {
         setTimeout(()=>{
           navigate('/login');
         },2000)
-        console.log('thanh cong');
+        // console.log('thanh cong',success());
       } else {
         warning('Tên người dùng hoặc mật khẩu không chính xác.');
       }

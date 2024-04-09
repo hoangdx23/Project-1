@@ -20,7 +20,6 @@ const AdminProduct = () => {
   return (
     <div>
       <HeaderAdmin />
-
       <div className="relative overflow-x-auto">
         {/* Sử dụng Link để tạo liên kết */}
         <Link to="add-product">
