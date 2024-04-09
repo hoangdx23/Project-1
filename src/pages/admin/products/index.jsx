@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import HeaderAdmin from '../layouts/headerAdmin';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const AdminProduct = () => {
   // Khai báo state để lưu trữ dữ liệu từ API
@@ -21,7 +22,12 @@ const AdminProduct = () => {
       <HeaderAdmin />
 
       <div className="relative overflow-x-auto">
-      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 m-10">Add</button>
+        {/* Sử dụng Link để tạo liên kết */}
+        <Link to="add-product">
+          <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 m-10">
+            Add
+          </button>
+        </Link>
         <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
