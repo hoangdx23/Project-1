@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import HeaderAdmin from '../layouts/headerAdmin';
-
+import { Button, Popconfirm } from 'antd';
 // Component User
 const User = () => {
     // Khai báo state để lưu trữ dữ liệu từ API
@@ -15,10 +15,11 @@ const User = () => {
             .then(data => {
                 // Cập nhật state với dữ liệu từ API
                 setUsers(data);
+                console.log(data);
+
             })
             .catch(error => console.error('Error fetching data:', error));
     }, []);
-
     // Render component
     return (
         <div>
@@ -48,15 +49,21 @@ const User = () => {
                         {users.map(userData => (
                             <tr key={userData.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                 <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                    {userData.email}
+                                    {userData.username}
                                 </td>
                                 <td className="px-6 py-4">
                                     {userData.password}
                                 </td>
                                 <td>
-                                    <button type="button" className="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Update</button>
-                                    <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Xóa</button>
-                                </td>
+                                    <Popconfirm
+                                        title="Delete the task"
+                                        description="Are you sure to delete this task?"
+                                        okText="Yes"
+                                        cancelText="No"
+                                    >
+                                        <Button danger>Delete</Button>
+                                    </Popconfirm>
+                                    <Button danger> Update</Button></td>
                             </tr>
                         ))}
                     </tbody>

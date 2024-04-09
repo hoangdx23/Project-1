@@ -19,6 +19,7 @@ const Register = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          // id: Math.random().toString(36).substr(2, 9),
           username: username,
           password: password,
         }),
@@ -30,7 +31,7 @@ const Register = () => {
         setTimeout(()=>{
           navigate('/login');
         },2000)
-        // console.log('thanh cong',success());
+        console.log('thanh cong',success());
       } else {
         warning('Tên người dùng hoặc mật khẩu không chính xác.');
       }

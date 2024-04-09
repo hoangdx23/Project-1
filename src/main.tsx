@@ -29,7 +29,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/admin" element={<AdminProduct />}>
           <Route index element={<AdminProduct />} />
         </Route>
-        <Route path="/user" element={<User />}>
+        <Route path="admin/user" element={<User />}>
           <Route index element={<User />} />
         </Route>
         <Route path="add-product" element={<AddProduct />} />\
