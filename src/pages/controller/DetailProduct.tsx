@@ -15,7 +15,7 @@ const ProductDetail = () => {
 
     const handleIncreaseQuantity = () => {
         setQuantity(quantity + 1);
-    };
+    };  
 
     const handleDecreaseQuantity = () => {
         if (quantity > 1) {

@@ -24,13 +24,13 @@ const Banner = () => {
       <div className="relative w-[1500px] ">
         <img src={images[slideIndex]} alt="" className='' />
         <button
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-l z-10  hover:bg-gray-300"
+          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-l z-10 bg-transparent text-slate-950  hover:bg-gray-300"
           onClick={goToPreviousSlide}
         >
           &#10094;
         </button>
         <button
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-r z-10  hover:bg-gray-300"
+          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-r z-10 bg-transparent text-slate-950 hover:bg-gray-300"
           onClick={goToNextSlide}
         >
           &#10095;

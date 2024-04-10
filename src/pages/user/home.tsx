@@ -79,8 +79,6 @@ const Home = () => {
           return (
             <div key={product.id} className="card w-1/4 p-4 py-10">
               <div className="imgBx ">
-                {/* Chú ý: Đây là một ví dụ, bạn cần cung cấp URL của hình ảnh cho thuộc tính src */}
-                <a href="detail"><img src={product.img} alt="nike-air-shoe" /></a>
                 <Link to={"/detail"}>
                   <img src={product.img} alt="nike-air-shoe" />
                 </Link>
